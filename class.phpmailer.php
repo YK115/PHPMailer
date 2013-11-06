@@ -573,7 +573,7 @@ class PHPMailer
         //Make sure our autoloader is loaded
         if (version_compare(PHP_VERSION, '5.1.2', '>=') and
             !spl_autoload_functions() || !in_array('PHPMailerAutoload', spl_autoload_functions())) {
-            require 'PHPMailerAutoload.php';
+            require_once 'PHPMailerAutoload.php';
         }
     }
 
